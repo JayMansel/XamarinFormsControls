@@ -1,8 +1,9 @@
 ﻿<Project Sdk="MSBuild.Sdk.Extras/1.6.68">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;xamarinios10;MonoAndroid60</TargetFrameworks>
-    <TargetFrameworks Condition="'$(OS)' == 'Windows_NT'">$(TargetFrameworks);uap10.0.16299</TargetFrameworks> <!-- Allows compiling on MacOS without UWP support-->
+    <TargetFrameworks>netstandard2.0;xamarinios10;MonoAndroid81</TargetFrameworks>
+    <TargetFrameworks Condition="'$(OS)' == 'Windows_NT'">$(TargetFrameworks);uap10.0.16299</TargetFrameworks>
+    <!-- Allows compiling on MacOS without UWP support-->
     <RootNamespace>dotMorten.Xamarin.Forms</RootNamespace>
     <AssemblyName>dotMorten.Xamarin.Forms.AutoSuggestBox</AssemblyName>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -19,7 +20,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="3.0.0.446417" />
+    <PackageReference Include="Xamarin.Forms" Version="4.1.0.618606" />
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta-63127-02" PrivateAssets="All" />
   </ItemGroup>
 
